@@ -1,0 +1,155 @@
+
+/*Селектор тега*/
+p{
+   color: brown;
+}
+span{
+   color: chartreuse;
+}
+
+
+/*Селектор класса*/
+.text{
+   color: darkblue;
+}
+.paragraph{
+   color: darkorange; 
+}
+
+
+/*приоритетнее предыдущего*/
+.text{
+   color: darkblue;
+}
+
+
+/*Селектор id*/
+#Content{
+   color: red;
+}
+
+/*Селекторы не равнозначные*/
+.container{
+   color: chartreuse;
+}
+div{
+   color: black;
+  }
+
+
+  /*ID самый приоритетный*/
+  #Notes{
+     color: darkturquoise;
+  }
+  .header{
+   color: darkgoldenrod;
+}
+  h2{
+     color: crimson;
+  }
+  
+
+  /*Уточняем обращение*/
+div.text{
+   color: red;
+}
+.text{
+   color: gray;
+}
+
+
+/*Селектор c двумя классами*/
+.text.paragraph{
+   color: slateblue;
+}
+
+
+/*Вложенность и приоритетность*/
+p span{
+   color: black;
+}
+span{
+   color: saddlebrown;
+}
+p mark{
+   color: blue;
+}
+mark{
+   color: seagreen;
+}
+
+
+/*Селектор с перечислением классов*/
+.line,
+.Writer,
+.information,
+.link{
+   color: black;
+}
+
+
+/*Селектор с перечислением тегов*/
+p, a, h1, span, mark, h3{
+   color: yellow;
+}
+
+
+/*Селектор с перечислениемid*/
+#Criticism,
+#Influence,
+#Notes{
+   color: red;
+}
+
+
+/*Селектор атрибута*/
+[title="name"]{
+   color: black;
+}
+
+/*Селектор атрибута с общей частью перечисление*/
+.about-text,
+.block-text,
+.book-text{
+   color: black;
+}
+.sheet-text{
+   color: darkblue;
+}
+.analysis-text{
+   color: darkorange;
+}
+
+
+/*Селектор атрибута с общей частью перечисление*/
+[class*="-text"] {
+   color: yellow;
+}
+
+
+/*Комплексные селекторы*/
+.section p{
+   color: black;
+}
+.section>p{
+   color: green;
+}
+
+
+.next-text+p{
+   color: green;
+}
+.next-text~p{
+   color: red;
+}
+
+
+
+/*Общий селектор*/
+* {
+	color: black;
+} 
+.text + *{
+   color: red;
+}
+
